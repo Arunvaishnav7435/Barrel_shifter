@@ -5,7 +5,7 @@ module barrel_shifter (
     output reg [7:0] data_out // 8-bit output data
 );
 
-    always @(*) begin
+    always@(*) begin
         if (dir == 1'b0) begin
             // Left shift
             data_out = data_in << shift;
